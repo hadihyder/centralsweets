@@ -9,13 +9,16 @@ import ProductValues from './modules/views/ProductValues';
 //import ProductHowItWorks from './modules/views/ProductHowItWorks';
 import ProductCTA from './modules/views/ProductCTA';
 import AppAppBar from './modules/views/AppAppBar';
-import {BrowserRouter as Router} from 'react-router-dom';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 function Index() {
   return (
     <Router>
     <React.Fragment>
       <AppAppBar />
+      <Switch>
+        <Route exact path="/contact" component={/*component name*/}/>
+      </Switch>
       <ProductHero />
       <ProductValues />
       <ProductCategories />
