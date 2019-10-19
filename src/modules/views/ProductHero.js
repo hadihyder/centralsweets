@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
-import Button from '../components/Button';
+// import Button from '../components/Button';
 import Typography from '../components/Typography';
 import ProductHeroLayout from './ProductHeroLayout';
 
-const backgroundImage =
-  'https://images.unsplash.com/photo-1534854638093-bada1813ca19?auto=format&fit=crop&w=1400&q=80';
+const backgroundImage =require(
+'/home/hadi/central/src/modules/icons/front.jpg');
 
 const styles = theme => ({
   background: {
@@ -37,12 +37,12 @@ function ProductHero(props) {
       {/* Increase the network loading priority of the background image. */}
       <img style={{ display: 'none' }} src={backgroundImage} alt="increase priority" />
       <Typography color="inherit" align="center" variant="h2" marked="center">
-        Upgrade your Sundays
+        Feel The Quality!
       </Typography>
       <Typography color="inherit" align="center" variant="h5" className={classes.h5}>
-        Enjoy secret offers up to -70% off the best luxury hotels every Sunday.
+        No Matter The Occasion, Get Yourself a Bag of Sweetness!
       </Typography>
-      <Button
+      {/* <Button
         color="secondary"
         variant="contained"
         size="large"
@@ -51,7 +51,7 @@ function ProductHero(props) {
         href="/premium-themes/onepirate/sign-up/"
       >
         Register
-      </Button>
+      </Button> */}
       <Typography variant="body2" color="inherit" className={classes.more}>
         Discover the experience
       </Typography>

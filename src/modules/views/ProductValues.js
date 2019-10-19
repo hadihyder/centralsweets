@@ -53,15 +53,15 @@ function ProductValues(props) {
             <div className={classes.item}>
               <img
                 className={classes.image}
-                src="/static/themes/onepirate/productValues1.svg"
-                alt="suitcase"
+                src={require('/home/hadi/central/src/modules/icons/pqfood.png')}
+                alt="pqfood"
               />
               <Typography variant="h6" className={classes.title}>
-                The best luxury hotels
+                Premium Quality Food
               </Typography>
               <Typography variant="h5">
-                {'From the latest trendy boutique hotel to the iconic palace with XXL pool'}
-                {', go for a mini-vacation just a few subway stops away from your home.'}
+                {'Get served with the best quality of sweets.'}
+                
               </Typography>
             </div>
           </Grid>
@@ -69,15 +69,15 @@ function ProductValues(props) {
             <div className={classes.item}>
               <img
                 className={classes.image}
-                src="/static/themes/onepirate/productValues2.svg"
-                alt="graph"
+                src={require('/home/hadi/central/src/modules/icons/newexp.png')}
+                alt="newexp"
               />
               <Typography variant="h6" className={classes.title}>
                 New experiences
               </Typography>
               <Typography variant="h5">
-                {'Privatize a pool, take a Japanese bath or wake up in 900m2 of garden… '}
-                {'your Sundays will not be alike.'}
+                {'Try new and different variety of sweets. '}
+                {'We cook new self-customized sweets every month'}
               </Typography>
             </div>
           </Grid>
@@ -85,15 +85,14 @@ function ProductValues(props) {
             <div className={classes.item}>
               <img
                 className={classes.image}
-                src="/static/themes/onepirate/productValues3.svg"
-                alt="clock"
+                src={require('/home/hadi/central/src/modules/icons/price.png')}
+                alt="price"
               />
               <Typography variant="h6" className={classes.title}>
                 Exclusive rates
               </Typography>
               <Typography variant="h5">
-                {'By registering, you will access specially negotiated rates '}
-                {'that you will not find anywhere else.'}
+                {'We provide cost effective rates, We do not charge hefty amounts. '}
               </Typography>
             </div>
           </Grid>

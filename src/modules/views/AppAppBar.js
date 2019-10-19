@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import clsx from 'clsx';
+// import clsx from 'clsx';
 import { withStyles } from '@material-ui/core/styles';
 import Link from '@material-ui/core/Link';
 import AppBar from '../components/AppBar';
@@ -48,11 +48,11 @@ function AppAppBar(props) {
             underline="none"
             color="inherit"
             className={classes.title}
-            href="/premium-themes/onepirate/"
+            //href="/premium-themes/onepirate/"
           >
-            {'onepirate'}
+            {'Central Sweets'}
           </Link>
-          <div className={classes.right}>
+          {/* <div className={classes.right}>
             <Link
               color="inherit"
               variant="h6"
@@ -70,7 +70,7 @@ function AppAppBar(props) {
             >
               {'Sign Up'}
             </Link>
-          </div>
+          </div> */}
         </Toolbar>
       </AppBar>
       <div className={classes.placeholder} />
