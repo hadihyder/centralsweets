@@ -7,11 +7,11 @@ import instagramLogo from "./modules/catalog/instagram.png";
 import twitterLogo from "./modules/catalog/twitter.png";
 import youtubeLogo from "./modules/catalog/youtube.png";
 
-function SyrupGallery(){
+function LadduGallery(){
 const IMAGES =
 [{
-        src: require('/home/hadi/central/src/modules/catalog/gulabjamun.jpg'),
-        thumbnail: require('/home/hadi/central/src/modules/catalog/gulabjamun_tn.jpg'),
+        src: require('/home/hadi/central/src/modules/catalog/tilladdu.jpg'),
+        thumbnail: require('/home/hadi/central/src/modules/catalog/tilladdu.jpg'),
         thumbnailWidth: 320,
         thumbnailHeight: 174,
         isSelected: true,
@@ -19,7 +19,7 @@ const IMAGES =
 },
 {
         src: require('/home/hadi/central/src/modules/catalog/rasgulla.jpg'),
-        thumbnail: require('/home/hadi/central/src/modules/catalog/rasgulla_tn.jpg'),
+        thumbnail: require('/home/hadi/central/src/modules/catalog/rasgulla.jpg'),
         thumbnailWidth: 320,
         thumbnailHeight: 212,
         tags: [{value: "Bengali Sweet", title: "Bengali Sweet"}],
@@ -28,7 +28,7 @@ const IMAGES =
 
 {
         src: require('/home/hadi/central/src/modules/catalog/agrapetha.jpg'),
-        thumbnail: require('/home/hadi/central/src/modules/catalog/agrapetha_tn.jpg'),
+        thumbnail: require('/home/hadi/central/src/modules/catalog/agrapetha.jpg'),
         thumbnailWidth: 320,
         thumbnailHeight: 212
 }]
@@ -96,4 +96,4 @@ return(
 
 
 }
-export default SyrupGallery;
+export default LadduGallery;

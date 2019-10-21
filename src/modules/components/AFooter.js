@@ -1,13 +1,13 @@
 import React from "react";
-import "../components/FooterGallery.css";
+import "../components/Footer.css";
 import facebookLogo from "../catalog/facebook.png";
 import instagramLogo from "../catalog/instagram.png";
 import twitterLogo from "../catalog/twitter.png";
 import youtubeLogo from "../catalog/youtube.png";
 
-export default function AppFooter() {
+export default function Footer() {
   return (
-    <footer>
+    <footer style={{position: "absolute", bottom:0}}>
       <div class="footer">
         <div class="footer-logo">
           <div class="footer-logo-img"></div>
@@ -56,7 +56,7 @@ export default function AppFooter() {
             </ul>
           </div>
           <div class="copyright">
-            <p>Copyright © 2019 Central Sweets</p>
+            <p>Copyright © 2019 Park ME Mini Project</p>
           </div>
         </section>
       </div>

@@ -4,7 +4,7 @@ import { withStyles } from '@material-ui/core/styles';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import Container from '@material-ui/core/Container';
 import Typography from '../components/Typography';
-// import {BrowserRouter as Router} from 'react-router-dom'
+import {Link} from 'react-router-dom';
 
 const styles = theme => ({
   root: {
@@ -87,56 +87,66 @@ const styles = theme => ({
 function ProductCategories(props) {
   const { classes } = props;
 
+    
   const images = [
     {
+      id:'SyrupGallery',      
       url:
         require('/home/hadi/central/src/modules/icons/Balu_shahi.jpg'),
       title: 'Sugar Syrup Based',
       width: '40%',
     },
     {
+      id:'LadduGallery',
       url:
         require('/home/hadi/central/src/modules/icons/laddoo.jpg'),
       title: 'Laddu',
       width: '20%',
     },
     {
+      id:"HalvaGallery",
       url:
         require('/home/hadi/central/src/modules/icons/halva.png'),
       title: 'Halva',
       width: '40%',
     },
     {
+      id:"BarfiGallery",
       url:
       require('/home/hadi/central/src/modules/icons/barfi.jpg'),
       title: 'Barfi',
       width: '38%',
     },
     {
+      id:"MilkGallery",
       url:
       require('/home/hadi/central/src/modules/icons/milk.jpg'),
       title: 'Milk-Based',
       width: '38%',
     },
     {
+      id:"FarsanGallery",
       url:
       require('/home/hadi/central/src/modules/icons/farsan.jpg'),
       title: 'Farsan',
       width: '24%',
     },
     {
+      id:"DryFruitsGallery",
       url:
       require('/home/hadi/central/src/modules/icons/dryfruits.jpg'),
       title: 'Dryfruits',
       width: '40%',
     },
     {
+      id:"PedhaGallery",
       url:
       require('/home/hadi/central/src/modules/icons/pedha.jpg'),
       title: 'Pedha',
       width: '20%',
     },
     {
+      id:"FriedGallery",
       url:
       require('/home/hadi/central/src/modules/icons/fried.jpg'),
       title: 'Fried',
@@ -152,34 +162,44 @@ function ProductCategories(props) {
       <div className={classes.images}>
         {images.map(image => (
           <ButtonBase
-            key={image.title}
+            key={image.id}
             className={classes.imageWrapper}
             style={{
               width: image.width,
             }}
-          >
+            >
             <div
               className={classes.imageSrc}
               style={{
                 backgroundImage: `url(${image.url})`,
               }}
-            />
+              />
             <div className={classes.imageBackdrop} />
             <div className={classes.imageButton}>
+                
+                <Link to= {`/${image.id}`}>
+                  
+                  
               <Typography
+              
                 component="h3"
                 variant="h6"
                 color="inherit"
                 className={classes.imageTitle}
-              >
+                >
                 {image.title}
                 <div className={classes.imageMarked} />
               </Typography>
+             </Link>
+             
             </div>
+            
           </ButtonBase>
         ))}
       </div>
+      
     </Container>
+  
   );
 }
 

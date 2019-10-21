@@ -7,7 +7,7 @@ import instagramLogo from "./modules/catalog/instagram.png";
 import twitterLogo from "./modules/catalog/twitter.png";
 import youtubeLogo from "./modules/catalog/youtube.png";
 
-function SyrupGallery(){
+function FriedGallery(){
 const IMAGES =
 [{
         src: require('/home/hadi/central/src/modules/catalog/gulabjamun.jpg'),
@@ -85,7 +85,7 @@ return(
         </div>
         <div class="copyright">
           <p>Copyright © 2019 Central Sweets</p>
-        </div>
+        </div> 
       </section>
     </div>
   </footer>
@@ -96,4 +96,4 @@ return(
 
 
 }
-export default SyrupGallery;
+export default FriedGallery;
