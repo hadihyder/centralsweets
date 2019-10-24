@@ -137,12 +137,13 @@ function ProductCategories(props) {
       width: "20%"
     },
     {
-      id: "FriedGallery",
-      url: require("../icons/fried.jpg"),
-      title: "Fried",
-      width: "40%"
-    }
-  ];
+      id:"BakedGallery",
+      url:
+      require('/home/hadi/central/src/modules/icons/baked.jpg'),
+      title: 'Baked',
+      width: '40%',
+    },
+    ];
 
   return (
     <Container className={classes.root} component="section">

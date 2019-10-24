@@ -26,13 +26,13 @@ function SyrupGallery() {
       caption: "Rasgulla"
     },
 
-    {
-      src: require("./modules/catalog/agrapetha.jpg"),
-      thumbnail: require("./modules/catalog/agrapetha_tn.jpg"),
-      thumbnailWidth: 320,
-      thumbnailHeight: 212
-    }
-  ];
+{
+        src: require('/home/hadi/central/src/modules/catalog/agrapetha.jpg'),
+        thumbnail: require('/home/hadi/central/src/modules/catalog/agrapetha_tn.jpg'),
+        thumbnailWidth: 320,
+        thumbnailHeight: 212,
+        caption: "Agrapetha"
+}]
 
   return (
     <>

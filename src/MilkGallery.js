@@ -7,32 +7,31 @@ import instagramLogo from "./modules/catalog/instagram.png";
 import twitterLogo from "./modules/catalog/twitter.png";
 import youtubeLogo from "./modules/catalog/youtube.png";
 
-function MilkGallery() {
-  const IMAGES = [
-    {
-      src: require("./modules/catalog/gulabjamun.jpg"),
-      thumbnail: require("./modules/catalog/gulabjamun_tn.jpg"),
-      thumbnailWidth: 320,
-      thumbnailHeight: 174,
-      isSelected: true,
-      caption: "Gulab Jamun"
-    },
-    {
-      src: require("./modules/catalog/rasgulla.jpg"),
-      thumbnail: require("./modules/catalog/rasgulla_tn.jpg"),
-      thumbnailWidth: 320,
-      thumbnailHeight: 212,
-      tags: [{ value: "Bengali Sweet", title: "Bengali Sweet" }],
-      caption: "Rasgulla"
-    },
+function MilkGallery(){
+const IMAGES =
+[{
+        src: require('/home/hadi/central/src/modules/catalog/milkcake.jpg'),
+        thumbnail: require('/home/hadi/central/src/modules/catalog/milkcake.jpg'),
+        thumbnailWidth: 320,
+        thumbnailHeight: 174,
+        caption: "Milk Cake"
+},
+{
+        src: require('/home/hadi/central/src/modules/catalog/malaibarfi.jpg'),
+        thumbnail: require('/home/hadi/central/src/modules/catalog/malaibarfi.jpg'),
+        thumbnailWidth: 320,
+        thumbnailHeight: 212,
+        // tags: [{value: "Bengali Sweet", title: "Bengali Sweet"}],
+        caption: "Malai Barfi"
+},
 
-    {
-      src: require("./modules/catalog/agrapetha.jpg"),
-      thumbnail: require("./modules/catalog/agrapetha_tn.jpg"),
-      thumbnailWidth: 320,
-      thumbnailHeight: 212
-    }
-  ];
+{
+        src: require('/home/hadi/central/src/modules/catalog/malaipedha.jpg'),
+        thumbnail: require('/home/hadi/central/src/modules/catalog/malaipedha.jpg'),
+        thumbnailWidth: 320,
+        thumbnailHeight: 212,
+        caption: "Malai Pedha"
+}]
 
   return (
     <>

@@ -7,32 +7,39 @@ import instagramLogo from "./modules/catalog/instagram.png";
 import twitterLogo from "./modules/catalog/twitter.png";
 import youtubeLogo from "./modules/catalog/youtube.png";
 
-function BarfiGallery() {
-  const IMAGES = [
-    {
-      src: require("./modules/catalog/gulabjamun.jpg"),
-      thumbnail: require("./modules/catalog/gulabjamun_tn.jpg"),
-      thumbnailWidth: 320,
-      thumbnailHeight: 174,
-      isSelected: true,
-      caption: "Gulab Jamun"
-    },
-    {
-      src: require("./modules/catalog/rasgulla.jpg"),
-      thumbnail: require("./modules/catalog/rasgulla_tn.jpg"),
-      thumbnailWidth: 320,
-      thumbnailHeight: 212,
-      tags: [{ value: "Bengali Sweet", title: "Bengali Sweet" }],
-      caption: "Rasgulla"
-    },
+function BarfiGallery(){
+const IMAGES =
+[{
+        src: require('/home/hadi/central/src/modules/catalog/barfi_green.jpg'),
+        thumbnail: require('/home/hadi/central/src/modules/catalog/barfi_green.jpg'),
+        thumbnailWidth: 320,
+        thumbnailHeight: 174,
+        isSelected: true,
+        caption: "Pineapple Barfi "
+},
+{
+        src: require('/home/hadi/central/src/modules/catalog/barfi_white.jpg'),
+        thumbnail: require('/home/hadi/central/src/modules/catalog/barfi_white.jpg'),
+        thumbnailWidth: 320,
+        thumbnailHeight: 212,
+        // tags: [{value: "Bengali Sweet", title: "Bengali Sweet"}],
+        caption: "Vanilla Barfi"
+},
 
-    {
-      src: require("./modules/catalog/agrapetha.jpg"),
-      thumbnail: require("./modules/catalog/agrapetha_tn.jpg"),
-      thumbnailWidth: 320,
-      thumbnailHeight: 212
-    }
-  ];
+{
+        src: require('/home/hadi/central/src/modules/catalog/barfi_pink.jpg'),
+        thumbnail: require('/home/hadi/central/src/modules/catalog/barfi_pink.jpg'),
+        thumbnailWidth: 320,
+        thumbnailHeight: 212,
+        caption: "Strawberry Barfi"
+},
+{
+    src: require('/home/hadi/central/src/modules/catalog/barfi_multicolor.jpg'),
+    thumbnail: require('/home/hadi/central/src/modules/catalog/barfi_multicolor.jpg'),
+    thumbnailWidth: 320,
+    thumbnailHeight: 212,
+    caption: "Mixed Barfi"
+}]
 
   return (
     <>

@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  *::before {
+    box-sizing: border-box;
+  }
+  
+  @keyframes bg {
+    0% {
+      background-position: left;
+    }
+    100% {
+      background-position: right;
+    }
+  }
+  
+  body {
+    /* background-image: linear-gradient(
+      45deg,
+      #28a745,
+      lightgreen,
+      #28a745,
+      lightgreen
+    ); */
+    background-size: 500%;
+    background-position: left;
+    animation: bg 5s infinite alternate ease-in-out;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+  }
+  
+  .wrapper {
+    margin: 0 auto;
+    width: 90%;
+  }
+  
+  .contact-logo {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .contact-logo h2 {
+    font-size: 35px;
+    font-weight: 800;
+    line-height: 2;
+    font-family: inherit;
+    text-align: center;
+    margin-block-start: 0.83em;
+    /* margin-block-end: 0.83em; */
+  }
+  
+  .contact-logo p {
+    font-size: 20px;
+    padding: 0 20px;
+    text-align: center;
+  }
+  
+  @media only screen and (min-width: 1100px) {
+    .contact-logo {
+      width: 100%;
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+  
+    .contact-logo h2 {
+      font-size: 55px;
+      font-weight: 800;
+      line-height: 2;
+      font-family: inherit;
+      text-align: center;
+      margin-block-start: 1.5em;
+      /* margin-block-end: 0.83em; */
+    }
+  
+    .contact-logo p {
+      font-size: 35px;
+      padding: 0 20px;
+      text-align: center;
+    }
+  }
+  
+  .info {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: repeat(5, auto); */
+    margin: 0px auto 0px auto;
+    width: 100%;
+    grid-gap: 20px;
+    grid-template-areas:
+      "name email"
+      "subject subject"
+      "message message"
+      "but but";
+  }
+  
+  .name {
+    /* grid-column: 4 / 6;
+    grid-row: 1/5; */
+    display: flex;
+    flex-flow: column;
+    grid-area: name;
+  }
+  
+  .name h2 {
+    font-size: 17px;
+    align-items: flex-start;
+    line-height: 25px;
+    width: 90%;
+  }
+  
+  .name input {
+    height: 40px;
+    width: 100%;
+    align-items: baseline;
+    background: transparent;
+    margin-top: 5px;
+    border: 2px solid white;
+    outline: none;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .email {
+    /* grid-column: 8 / 11;
+    grid-row: 1/3; */
+    display: flex;
+    flex-flow: column;
+    grid-area: email;
+  }
+  
+  .email h2 {
+    font-size: 17px;
+    align-items: flex-start;
+    justify-content: flex-end;
+    line-height: 25px;
+    width: 90%;
+  }
+  
+  .email input {
+    height: 40px;
+    width: 100%;
+    align-items: baseline;
+    margin-top: 5px;
+    border: 2px solid white;
+    outline: none;
+    background: transparent;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .subject {
+    /* grid-column: 1 / 13;
+    grid-row: 7/10; */
+    display: flex;
+    flex-flow: column;
+    grid-area: subject;
+  }
+  
+  .subject h2 {
+    font-size: 17px;
+    align-items: flex-start;
+    line-height: 25px;
+  }
+  
+  .subject input {
+    height: 40px;
+    width: 100%;
+    align-items: baseline;
+    margin-top: 5px;
+    border: 2px solid white;
+    background: transparent;
+    outline: none;
+    font-size: 20px;
+  }
+  
+  .message {
+    /* grid-column: 0 / 0;
+    grid-row: 7/10; */
+    display: flex;
+    flex-flow: column;
+    grid-area: message;
+    margin-bottom: 10px;
+  }
+  
+  .message h2 {
+    font-size: 17px;
+    align-items: flex-start;
+    line-height: 25px;
+  }
+  
+  .message input {
+    height: 250px;
+    width: 100%;
+    /* align-items: flex-start; */
+    margin-top: 5px;
+    border: 2px solid white;
+    outline: none;
+    background: transparent;
+    font-size: 20px;
+    text-transform: none;
+  }
+  
+  .but {
+    margin: 0 auto 0px auto;
+    width: 28%;
+    text-align: center;
+    color: white;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    background-color: lightgreen;
+    border-radius: 20px;
+    position: relative;
+    border: 1px solid black;
+    grid-area: but;
+  }
+  
+  .but button {
+    font-size: 1.3rem;
+    background: transparent;
+    border: none;
+    outline: none;
+    /* margin-bottom: 20px; */
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .but {
+      margin: 0 auto 0px auto;
+      width: 15%;
+      text-align: center;
+      color: white;
+      height: 40px;
+      background-color: lightgreen;
+      border-radius: 20px;
+      position: relative;
+      border: 2px solid black;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .but button {
+      font-size: 1.5rem;
+      background: transparent;
+      border: none;
+      outline: none;
+      align-items: center;
+    }
+  }
+  
+  @media only screen and (min-width: 1100px) {
+    .but {
+      margin: 0 auto 20px auto;
+      width: 15%;
+      text-align: center;
+      color: white;
+      height: 40px;
+      background-color: lightgreen;
+      border-radius: 20px;
+      position: relative;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      /* background-image: linear-gradient(
+        90deg,
+        #28a745,
+        lightgreen,
+        #28a745,
+        lightgreen
+      ); */
+      background-size: 200%;
+      background-position: left;
+      transition: all 0.3s ease-in-out;
+    }
+  
+    .but:hover {
+      background-position: right;
+    }
+  
+    .but button {
+      font-size: 20px;
+      background: transparent;
+      border: none;
+      outline: none;
+      align-items: center;
+    }
+  }

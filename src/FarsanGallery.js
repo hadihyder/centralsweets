@@ -7,32 +7,32 @@ import instagramLogo from "./modules/catalog/instagram.png";
 import twitterLogo from "./modules/catalog/twitter.png";
 import youtubeLogo from "./modules/catalog/youtube.png";
 
-function FarsanGallery() {
-  const IMAGES = [
-    {
-      src: require("./modules/catalog/gulabjamun.jpg"),
-      thumbnail: require("./modules/catalog/gulabjamun_tn.jpg"),
-      thumbnailWidth: 320,
-      thumbnailHeight: 174,
-      isSelected: true,
-      caption: "Gulab Jamun"
-    },
-    {
-      src: require("./modules/catalog/rasgulla.jpg"),
-      thumbnail: require("./modules/catalog/rasgulla_tn.jpg"),
-      thumbnailWidth: 320,
-      thumbnailHeight: 212,
-      tags: [{ value: "Bengali Sweet", title: "Bengali Sweet" }],
-      caption: "Rasgulla"
-    },
+function FarsanGallery(){
+const IMAGES =
+[{
+        src: require('/home/hadi/central/src/modules/catalog/farsan.jpg'),
+        thumbnail: require('/home/hadi/central/src/modules/catalog/farsan.jpg'),
+        thumbnailWidth: 320,
+        thumbnailHeight: 174,
+        isSelected: true,
+        caption: "Mix Farsan"
+},
+{
+        src: require('/home/hadi/central/src/modules/catalog/gathiya.jpg'),
+        thumbnail: require('/home/hadi/central/src/modules/catalog/gathiya.jpg'),
+        thumbnailWidth: 320,
+        thumbnailHeight: 212,
+        // tags: [{value: "Bengali Sweet", title: "Bengali Sweet"}],
+        caption: "Gathiya"
+},
 
-    {
-      src: require("./modules/catalog/agrapetha.jpg"),
-      thumbnail: require("./modules/catalog/agrapetha_tn.jpg"),
-      thumbnailWidth: 320,
-      thumbnailHeight: 212
-    }
-  ];
+{
+        src: require('/home/hadi/central/src/modules/catalog/chivda.jpg'),
+        thumbnail: require('/home/hadi/central/src/modules/catalog/chivda.jpg'),
+        thumbnailWidth: 320,
+        thumbnailHeight: 212,
+        caption: "Chivda"
+}]
 
   return (
     <>
