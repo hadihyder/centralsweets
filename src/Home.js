@@ -24,7 +24,7 @@ function Index() {
     <React.Fragment>
       <AppAppBar />
       <Switch>
-        <Route exact path="/contact" component={Contact}/>
+        <Route exact path="/Contact" component={Contact}/>
         <Route exact path="/HalvaGallery" component={HalvaGallery}/>
         <Route exact path="/BarfiGallery" component={BarfiGallery}/>
         <Route exact path="/DryFruitsGallery" component={DryFruitsGallery}/>

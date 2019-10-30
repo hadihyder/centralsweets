@@ -43,6 +43,7 @@ function AppAppBar(props) {
     <div>
       <AppBar position="fixed">
         <Toolbar className={classes.toolbar}>
+           
           <div className={classes.left} />
           <Link
             variant="h6"

@@ -5,7 +5,7 @@ import { withStyles } from "@material-ui/core/styles";
 import Typography from "../components/Typography";
 import ProductHeroLayout from "./ProductHeroLayout";
 
-const backgroundImage = require("../icons/front.jpg");
+const backgroundImage = require("../catalog/homeimg.jpeg");
 
 const styles = theme => ({
   background: {

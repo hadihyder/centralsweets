@@ -22,7 +22,7 @@ export default function AppFooter() {
                 <a href="/"> ABOUT US</a>
               </li>
               <li>
-                <a href="/"> CONTACT US</a>
+                <a href="/Contact"> CONTACT US</a>
               </li>
               <li>
                 <a href="/"> TERMS & CONDITION</a>

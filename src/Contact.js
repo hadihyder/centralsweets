@@ -20,7 +20,7 @@ return(
     </div>
 
     <div class="info">
-      <div class="name">
+      <div class="name" style={{border: 1}}>
         <h2>Your Name (required)</h2>
         <input type="text" 
         onChange={
@@ -73,7 +73,7 @@ return(
         onClick={async function(event){
           console.log("Sending ...")
           try{
-            let response = await fetch(`http://localhost:3000/index.js?name=${name}&email=${email}&message=${message}`)
+            let response = await fetch(`https://server.hyderhadi.now.sh/index.js?name=${name}&email=${email}&message=${message}&subject=${subject}`);
             console.log("Done");
             console.log(response);
           } catch (err){
@@ -100,7 +100,7 @@ return(
             <a href="/"> ABOUT US</a>
           </li>
           <li>
-            <a href="/"> CONTACT US</a>
+            <a href="/Contact"> CONTACT US</a>
           </li>
           <li>
             <a href="/"> TERMS & CONDITION</a>

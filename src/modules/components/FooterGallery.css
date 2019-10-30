@@ -57,7 +57,7 @@ body {
     align-items: center; */
     height: 15vh;
     width: 20vw;
-    background-image: url(../catalog/cslogo.jpg);
+    background-image: url(../catalog/centrallogo.png);
     background-size: contain;
     background-position: 50%;
     background-repeat: no-repeat;
